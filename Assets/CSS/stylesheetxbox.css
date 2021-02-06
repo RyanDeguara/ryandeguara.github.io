@@ -1,0 +1,166 @@
+body {
+	background-image: url("../Images/XBOXBG2.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#main {
+	width: 95vw;
+	margin: auto;
+	border: 0px black solid;
+}
+
+footer {
+	background-color: #3C3C3C;
+	text-align: center;
+	color: #66B933;
+	display: inline-block;
+	width: 95vw;
+}
+
+#ul1 {
+	list-style-type: none;
+	margin: 0;
+	padding : 0;
+	overflow: hidden;
+	background-color: #232323;
+}
+
+.li1 {
+	float: left;
+}
+
+.li1 .a1 {
+	display: block;
+	color: #FEFEFE;
+	font-size: 1em;
+	text-align: center;
+	padding: 1.5em 2.5em;
+	text-decoration: none;
+}
+
+header, .li1 .a1:hover{
+	background-color: #66B933;
+}
+
+#content {
+	position: relative;
+	min-height: 70%;
+}
+
+#subContainer {
+	display: inline-block;
+	width: 100vw;
+	margin: auto;
+	margin-top: 1vh;
+	border: 0px black solid;
+}
+#rightMenu {
+	font-size: 1em;
+	float: left;
+	position: absolute;
+	right: 0px;
+	width: 14vw;
+	margin-bottom: 0px;
+	padding: 1em;
+	background-color: #232323;
+	color: #66B933;
+}
+
+#main h3{
+	margin: 1em;
+}
+
+#HeaderImage {
+	width: 100%;
+	height: 50vh;
+}
+
+#leftMenu {
+	vertical-align: top;
+	float: left;
+	width: 75vw;
+	margin: 0px;
+	padding: 1em;
+	color: #FEFEFE;
+	width: 60vw;
+	display: inline-block;
+}
+
+.textWithImage {
+	margin: 10px;
+}
+
+.textWithImage p {
+	display: inline-block;
+	vertical-align: top;
+	width:65%;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+.textWithImage img {
+	margin: 10px;
+	display: inline-block;
+	border: 3px #66B933 solid;
+	border-radius: 5%;
+	width: 25%;
+}
+
+.textWithImage .bigimages{
+	margin: 10px;
+	display: inline-block;
+	border: 3px #66B933 solid;
+	border-radius: 5%;
+	width: 30%;
+}
+
+.controllers .imgcol {
+	display: inline-block;
+	margin: 3%;
+	border: 3px #66B933 solid;
+}
+
+.directories {
+	background-color: #66B933;
+	border: none;
+	color: white;
+	padding: 5% 10%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	cursor: pointer;
+	margin-bottom: 5px;
+	width: 14vw;
+}
+
+/* Desktops */
+@media only screen and (max-width : 992px) 
+{
+	html, body 
+	{
+		font-family: "Open Sans", sans-serif;
+		font-size: 10px;
+	}
+	#HeaderImage {
+		width: 100%;
+		height: 20vh;
+	}
+	
+	.textWithImage {
+		margin: 0px;
+	}
+
+	.textWithImage p {
+		display: inline-block;
+		vertical-align: top;
+		width:55%;
+	}
+	.textWithImage img {
+		margin: 10px;
+		display: inline-block;
+		border-radius: 50%;
+		width: 30%;
+	}
+}

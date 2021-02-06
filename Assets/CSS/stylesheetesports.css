@@ -1,0 +1,185 @@
+
+body {
+	background-image: url("../Images/ESPORTBG4.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#main {
+	width: 95vw;
+	margin: auto;
+	border: 0px black solid;
+}
+
+table {
+	background-color: #191970;
+	font-family:Arial, Helvetica, sans-serif;
+	color:white;
+	border:white 1px solid;
+}
+
+table th {
+	width: 15vw;
+	height: 7vh;
+	background-color: #3A01C1;
+	border:white 1px solid;
+}
+
+table tr {
+	padding-left:20px;
+	border:white 1px solid;
+}
+
+table td {
+	border:white 1px solid;
+	padding:18px;
+	width: 15vw;
+}
+
+table td:hover{
+	border: blue 1px solid;
+}
+
+table th:hover{
+	border: blue 1px solid;
+}
+
+
+footer {
+	background-color: #191970;
+	text-align: center;
+	color: #FEFEFE;
+	display: inline-block;
+	width: 95vw;
+}
+
+#ul1 {
+	list-style-type: none;
+	margin: 0;
+	padding : 0;
+	overflow: hidden;
+	background-color: #191970;
+}
+
+.li1 {
+	float: left;
+}
+
+.li1 .a1 {
+	display: block;
+	color: #FEFEFE;
+	font-size: 1em;
+	text-align: center;
+	padding: 1.5em 2.5em;
+	text-decoration: none;
+}
+
+header, .li1 .a1:hover{
+	background-color: #9E75FE;
+}
+
+
+#content {
+	position: relative;
+	min-height: 70%;
+}
+
+#subContainer {
+	display: inline-block;
+	width: 100vw;
+	margin: auto;
+	margin-top: 1vh;
+	border: 0px black solid;
+}
+#rightMenu {
+	font-size: 1em;
+	float: left;
+	position: absolute;
+	right: 0px;
+	width: 14vw;
+	margin-bottom: 0px;
+	padding: 1em;
+	background-color: #191970;
+	color: #FEFEFE;
+}
+
+#HeaderImage {
+	width: 100%;
+	height: 50vh;
+}
+
+#main h3{
+	margin: 1em;
+}
+
+#leftMenu {
+	vertical-align: top;
+	float: left;
+	color: #FEFEFE;
+	margin: 0px;
+	padding: 1em;
+	width: 60vw;
+	display: inline-block;
+}
+
+.textWithImage {
+	margin: 10px;
+}
+
+.textWithImage p {
+	display: inline-block;
+	vertical-align: top;
+	width:65%;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+.textWithImage img {
+	margin: 10px;
+	display: inline-block;
+	border: 3px #191970 solid;
+	border-radius: 5%;
+	width: 25%;
+}
+
+.directories {
+	background-color: #3A01C1;
+	border: none;
+	color: white;
+	padding: 5% 10%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	cursor: pointer;
+	margin-bottom: 5px;
+	width: 14vw;
+}
+
+/* Desktops */
+@media only screen and (max-width : 992px) 
+{
+	html, body 
+	{
+		font-family: "Open Sans", sans-serif;
+		font-size: 10px;
+	}
+	#HeaderImage {
+		width: 100%;
+		height: 20vh;
+	}
+	
+	.textWithImage {
+		margin: 0px;
+	}
+
+	.textWithImage p {
+		display: inline-block;
+		vertical-align: top;
+		width:55%;
+	}
+	.textWithImage img {
+		margin: 10px;
+		display: inline-block;
+	}
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Gaming News
+		</title>
+		<script src= "Assets/Scripts/site.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/stylesheet.css">
+		<meta charset="utf-8" />
+	</head>
+	
+	<body>
+		<div id="main">
+			<header>
+				<nav>
+					<ul id="ul1">
+						<li class = "li1"><a class = "a1" href="index.html">Home</a></li>
+						<li class = "li1"><a class = "a1" href="ps5.html">PS5 News</a></li>
+						<li class = "li1"><a class = "a1" href="xbox.html">Xbox News</a></li>
+						<li class = "li1"><a class= "a1" href="game.html">Game News</a></li>
+						<li class = "li1"><a class = "a1" href="esports.html">ESports</a></li>
+					</ul>
+				</nav>
+				<img id = "HeaderImage" src="Assets/Images/HOMEIMGHEADER2.jpg" alt="HEADER" />
+			</header>
+			<div id="content">
+				<div id="subContainer">
+					<!--Left Menu-->
+					<section id="leftMenu">
+						<h2>Gaming Hub</h2><hr>
+						<section>
+							<h3>Welcome to my website!</h3>
+							<div class = "textWithImage">
+								<p>
+									Hello! Our website is all about the most relevant and latest news on all things Gaming. You can navigate our pages at the top of the screen via the navigation bar. You can also navigate all our topics individually on the right-hand side of the menu by clicking the topic! Please fill and submit the registration form to be informed of all updates and latest news. Everything on the website is non-biased, user-friendly and avoids any industry jargon. If you are interested in any of the content feel free to check it out and be sure to try our new game quiz!! It is a challenging quiz that will test your knowledge of gaming and see if you really know your stuff!! Hopefully you found the quiz easy or learnt a few things about gaming! Hint: You may want to read the other pages before attempting the quiz because it may relate in some way.
+								</p>
+								<img src="Assets/Images/gameimg.jpg" alt="img1" />
+							</div>
+						</section><hr>
+						<!--Quiz-->
+						<div id="quiz">
+							<h1>Quiz</h1>
+							<button class="quizbuttons" onclick=" setQuestion(0); ">Q1</button>
+							<button class="quizbuttons" onclick=" setQuestion(1); ">Q2</button>
+							<button class="quizbuttons" onclick=" setQuestion(2); ">Q3</button>
+							<button class="quizbuttons" onclick=" setQuestion(3); ">Q4</button>
+							<button class="quizbuttons" onclick=" setQuestion(4); ">Q5</button>
+							
+							<h2 id="question">Select Question:</h2>
+							<h4>Please use full abbreviation, correct uppercase and correct spelling.</h4>
+							
+							<label>
+								<span>Enter your answer:</span>
+								<input class="generalInput" type="text" id="answer" required>
+							</label>
+							
+							<h3 id="correct">Once answered please submit below!</h3>
+							<button class="buttonssubmit" onclick=" checkAnswer(); ">Submit</button>
+						<!--Contact Form-->
+						</div>
+							<div>
+								<hr>
+								<h3 id="registration">Registration:</h3>
+								<form action="#" name="regForm" onsubmit="return( validate() );">
+										<div>
+											<label>
+												<span>First name:</span><span class="errorMessage" id="firstnameMessage"></span>
+												<input type="text" class="generalInput" name="firstname">
+											</label>
+										</div>
+										<div>
+											<label>
+												<span>Last name:</span><span class="errorMessage" id="lastnameMessage"></span>
+												<input type="text" class="generalInput" name="lastname">
+											</label>
+										</div>
+										<div>
+											<label>Email Address</label><input class="generalInput" type="email" name="email">
+										</div>
+										<div>
+											<label>
+												<span>Password:</span><span class="errorMessage" id="passwordMessage"></span>
+												<input type="password" class="generalInput" name="password">
+											</label>
+										</div>
+										<div>
+											<label>Continent:</label>
+											<select class="generalInput2">
+												<option value="europe">Europe</option>
+												<option value="asia">Asia</option>
+												<option value="africa">Africa</option>
+												<option value="n_america">North America</option>
+												<option value="s_america">South America</option>
+												<option value="other">Other</option>
+											</select>
+										</div>
+										<div>
+										<label>Gender:</label><br>
+											<input type="radio" name="gender" value="male">Male<br>
+											<input type="radio" name="gender" value="female">Female<br>
+											<input type="radio" name="gender" value="other">Other<br>
+										</div><br>
+										<div>
+											<label>Game Console Preference:</label><br>
+											<input type="checkbox" name="gameconsole" value="Playstation">Playstation<br>
+											<input type="checkbox" name="gameconsole" value="Xbox">Xbox<br>
+											<input type="checkbox" name="gameconsole" value="Nintendo">Nintendo<br>
+											<input type="checkbox" name="gameconsole" value="PC">PC<br>
+											<input type="checkbox" name="gameconsole" value="none">None of the above<br>
+										</div><br>
+										<div>
+											<label>
+												<span>Initial Reason for visiting the website:</span>
+												<textarea class="textarea">Text goes here...</textarea>
+											</label>
+										</div>
+									<button  class="buttonssubmit" type="submit">Submit</button>
+								</form>
+								<hr>
+								<div>
+									<h3>Contact Options</h3>
+									<ol>
+										<li>
+											For any further queries, business enquiries, help or problems need solving be sure to contact my email: C20309873@mytudublin.ie
+										</li>
+										<li>
+											Or if any need to call me please email me with a reason why you need my number!
+										</li>
+									</ol>
+								</div>
+							</div>
+					</section>
+					<!--Right Menu-->
+					<section id="rightMenu">
+						<h3>Hot Topics:</h3>
+							<button class="directories" onclick="window.location.href='index.html#quiz';">
+							  Quiz and Registration
+							</button><br>
+							<button class="directories" onclick="window.location.href='ps5.html#ps5section';">
+							  PS5 Information
+							</button><br>
+							<button class="directories" onclick="window.location.href='ps5.html#psplussection';">
+							  PS Plus News 
+							</button><br>
+							<button class="directories" onclick="window.location.href='ps5.html#ps5stocksection';">
+							  PS5 Stock Updates
+							</button><br>
+							<button class="directories" onclick="window.location.href='xbox.html#xboxstock';">
+							  Xbox Stock Updates
+							</button><br>
+							<button class="directories" onclick="window.location.href='xbox.html#xboxinformation';">
+							  Xbox Information
+							</button><br>
+							<button class="directories" onclick="window.location.href='xbox.html#xboxbundle';">
+							  New Xbox Bundle
+							</button><br>
+							<button class="directories" onclick="window.location.href='game.html#fortnitenews';">
+							  Fortnite news
+							</button><br>
+							<button class="directories" onclick="window.location.href='esports.html#fortniteesport';">
+							  Fortnite Esport news
+							</button><br>
+							<button class="directories" onclick="window.location.href='esports.html#dotaesport';">
+							  Dota 2 Esport news
+							</button><br>
+							<button class="directories" onclick="window.location.href='game.html#cyberpunk';">
+							  Cyberpunk 2077 news
+							</button>
+					</section>
+				</div>
+			</div>
+			<footer><p>Site by: Ryan Deguara &copy; 2020</p></footer>
+		</div>
+	</body>	
+</html>

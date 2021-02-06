@@ -1,0 +1,182 @@
+body {
+	background-image: url("../Images/PS5BACKGROUND.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#main {
+	width: 95vw;
+	margin: auto;
+	border: 0px black solid;
+}
+
+footer {
+	background-color: #409FFE;
+	text-align: center;
+	color: #FEFEFE;
+	display: inline-block;
+	width: 95vw;
+}
+
+#ul1 {
+	list-style-type: none;
+	margin: 0;
+	padding : 0;
+	overflow: hidden;
+	background-color: #409FFE;
+}
+
+.li1 {
+	float: left;
+}
+
+.li1 .a1 {
+	display: block;
+	color: #FEFEFE;
+	font-size: 1em;
+	text-align: center;
+	padding: 1.5em 2.5em;
+	text-decoration: none;
+}
+
+header, .li1 .a1:hover{
+	background-color: #1E90FF;
+}
+
+#content {
+	position: relative;
+	min-height: 70%;
+}
+
+#HeaderImage {
+	width: 100%;
+	height: 50vh;
+}
+
+#subContainer {
+	display: inline-block;
+	width: 100vw;
+	margin: auto;
+	margin-top: 1vh;
+	border: 0px black solid;
+}
+#rightMenu {
+	font-size: 1em;
+	float: left;
+	position: absolute;
+	right: 0px;
+	width: 14vw;
+	margin-bottom: 0px;
+	padding: 1em;
+	background-color: #1E90FF;
+	color: #FEFEFE;
+}
+
+#main h3{
+	margin: 1em;
+}
+
+#leftMenu {
+	vertical-align: top;
+	float: left;
+	color: #FEFEFE;
+	margin: 0px;
+	padding: 1em;
+	width: 60vw;
+	display: inline-block;
+}
+
+.textWithImage {
+	margin: 10px;
+}
+
+.textWithImage p {
+	display: inline-block;
+	vertical-align: top;
+	width:65%;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+.textWithImage img {
+	margin: 10px;
+	display: inline-block;
+	border: 3px #1E90FF solid;
+	border-radius: 10%;
+	width: 30%;
+}
+
+.textWithImage #img3 {
+	margin: 10px;
+	display: inline-block;
+	border-radius: 0%;
+	border: 0px #1E90FF solid;
+	width: 25%;
+}
+.textWithImage #img6 {
+	margin: 10px;
+	display: inline-block;
+	border: 3px #1E90FF solid;
+	border-radius: 10%;
+	width: 17%;
+}
+
+.collection .imgcol {
+	display: inline-block;
+	width: 25%;
+	height: 250px;
+	margin: 3%;
+	border: 3px #1E90FF solid;
+}
+
+.directories {
+	background-color: #409FFE;
+	border: none;
+	color: white;
+	padding: 5% 10%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	cursor: pointer;
+	margin-bottom: 5px;
+	width: 14vw;
+}
+
+/* Desktops */
+@media only screen and (max-width : 992px) 
+{
+	html, body 
+	{
+		font-family: "Open Sans", sans-serif;
+		font-size: 10px;
+	}
+	#HeaderImage {
+		width: 100%;
+		height: 20vh;
+	}
+	
+	.textWithImage {
+		margin: 0px;
+	}
+
+	.textWithImage p {
+		display: inline-block;
+		vertical-align: top;
+		width:55%;
+	}
+	.textWithImage img {
+		margin: 10px;
+		display: inline-block;
+		border-radius: 50%;
+		width: 30%;
+	}
+	.collection .imgcol {
+		display: inline-block;
+		width: 40%;
+		height: 130px;
+		margin: 3%;
+		border: 3px #1E90FF solid;
+		border-radius: 5%;
+	}
+}
